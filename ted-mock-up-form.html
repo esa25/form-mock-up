@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted Mock-up Sign-In Form</title>
+    <link rel="stylesheet" href="ted-mock-up-form-style.css">
+</head>
+<body>
+    <header class='speaker-form-header'>
+        <h1>Speaker Submission</h1>
+        <p><em>Want to speak at our fake conference? Fill out
+          this form.</em></p>
+    </header>
+
+    <form action="" method="GET" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name"> Full name</label>
+            <input type="text" id="full-name" name="full-name">
+        </div>
+
+        <div class="form-row">
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" placeholder="username@example.com">
+        </div>
+
+        <fieldset class='legacy-form-row'>
+            <legend>Type of Talk</legend>
+            <input type='radio' id='talk-type-1' name='talk-type-1' value='main-stage' />
+            <label for='talk-type-1' class="radio-label"> Main Stage </label>
+            <input type='radio' id='talk-type-2' name='talk-type-2' value='workshop' checked/>
+            <label for='talk-type-2' class="radio-label"> Workshop </label>
+        </fieldset>
+
+        <div class='form-row'>
+            <label for="talk-topic"> Topics </label>
+            <select id='talk-topic'name='talk-topic'>
+                <option value="select" default>Select A Topic</option>
+                <option value="community"> Community </option>
+                <option value="culture"> Culture </option>
+                <option value="education"> Education </option>
+                <option value="health"> Health </option>
+                <option value="global-issues"> Global Issues </option>
+                <option value="health-care"> Health Care</option>
+                <option value="justice-system"> Justice System </option>
+                <option value="mental-health"> Mental Health</option>
+                <option value="environmental"> Enivronmental </option>
+                <option value="techonology"> Technology </option>
+                <option value="media"> Media </option>
+                <option value="lgbtqia+"> LGBTQIA+ </option>
+                <option value="job-market"> Job Market </option>
+                <option value="activism "> Activisim </option>
+                <option value="other"> Other </option>
+            </select>
+        </div>
+
+        <div class='form-row'>
+            <label for="abstract"> Abstract </label>
+            <textarea name="abstract" id="abstract" cols="60" rows="10"></textarea>
+            <div class='instructions'> Describe your talk in 500 words or less. </div>
+        </div>
+
+        <div class='form-row'>
+            <label class="checkbox-label" for='available'>
+                <input id='available' name='available' type='checkbox' value="is-available"/>
+                <span> I'm actaully available the date of the talk. </span>
+            </label>
+        </div>
+
+        <div class='form-row'>
+            <button> Submit </button>
+        </div>
+    </form>
+</body>
+</html>
