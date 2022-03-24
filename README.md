@@ -1,5 +1,5 @@
-# HTML form-mock-up
-## Using styling forms
+# HTML Form Mock Up
+## Using the most commone HTML form elements and styling them:
 * Styling Input Fields
     * text
     * email
